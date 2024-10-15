@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'olechka.labs'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files('./libs/fastcgi-lib.jar') // Указываем путь к библиотеке
+    // https://mavenlibs.com/maven/dependency/org.json/json
+    implementation group: 'org.json', name: 'json', version: '20230618'
+}
+// Этот блок нужен для сборки fat jar файла
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'Main'
+        )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    archiveFileName = 'app.jar'
+}
+
+test {
+    useJUnitPlatform()
+}

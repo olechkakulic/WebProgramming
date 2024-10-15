@@ -1,0 +1,29 @@
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-title {
+    font-family: var(--font-family);
+    font-size: 50px;
+    margin: 0 30px;
+}
+
+.header-logo-img {
+    flex: 1 1 auto;
+    width: 50px;
+    transition: 0.5s;
+
+}
+
+.header-logo-img:hover {
+    width: 60px;
+    transform: scale(1.2);
+}
