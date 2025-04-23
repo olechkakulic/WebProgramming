@@ -1,0 +1,17 @@
+/*общие стили*/
+:root {
+    --color-white: white;
+    --color-black: black;
+    --color-gray: grey;
+    --font-family: fantasy, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: url('../images/min.jpg');
+    background-size: cover;
+    background-position:  center;
+    background-repeat: no-repeat;
+
+}
+

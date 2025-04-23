@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* -------------------------для формы---------------------- */
+.formAuth {
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.divAuth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* -------------------------для кнопки---------------------- */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0px 20px;
+  font-size: 16px;
+  min-width: 180px;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+  .btn {
+    font-size: 14px;
+    min-width: 120px;
+    padding: 8px 15px;
+  }
+
+  .button-container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn {
+    font-size: 12px;
+    min-width: 100px;
+    padding: 6px 12px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+/* -------------------------для заголовка---------------------- */
+/* Основные стили для контейнера nav-wrapper */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Адаптивный размер шрифта для brand-logo */
+.lol {
+  font-size: clamp(5px, 5vw, 30px);  /* Размер шрифта будет изменяться в зависимости от ширины экрана */
+  white-space: nowrap;  /* Не разрывать текст на несколько строк */
+}
+
+/* Стиль для элементов навигации */
+#nav-mobile {
+  display: flex;
+  list-style-type: none
+}
+
+/* -----------для второй странички */
+.MainPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Добавляет промежуток между элементами */
+}

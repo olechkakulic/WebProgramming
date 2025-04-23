@@ -1,0 +1,5 @@
+.x-form, .y-form, .R-form, .button-form-send, .button-form-clear {
+    padding: 5px;
+    border: 6px solid #dddddd;
+    background: seashell;
+}
